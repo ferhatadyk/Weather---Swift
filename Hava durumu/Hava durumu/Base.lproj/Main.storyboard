@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wOa-xa-qT7">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="JosefinSans-Bold.ttf">
+            <string>JosefinSans-Bold</string>
+        </array>
+        <array key="JosefinSans-Light.ttf">
+            <string>JosefinSans-Light</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="xEk-96-o1o">
+            <objects>
+                <viewController id="wOa-xa-qT7" customClass="ViewController" customModule="Hava_durumu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L2g-KY-lxL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ON1-gC-C74">
+                                <rect key="frame" x="10" y="54" width="394" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WLd-iN-c8q">
+                                        <rect key="frame" x="0.0" y="0.5" width="40" height="39"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="0OR-CM-S5U"/>
+                                            <constraint firstAttribute="width" constant="40" id="sbl-E6-BLH"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
+                                        <state key="normal" backgroundImage="location.circle.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="currentLocationButtonTapped:" destination="wOa-xa-qT7" eventType="touchUpInside" id="6Lb-Pi-g7W"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ara" clearsOnBeginEditing="YES" minimumFontSize="12" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="GVJ-Nb-7yB">
+                                        <rect key="frame" x="50" y="0.0" width="294" height="40"/>
+                                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="search" textContentType="address-level2"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mbr-qp-7Ve">
+                                        <rect key="frame" x="354" y="-2.5" width="40" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="807-9X-cyc"/>
+                                            <constraint firstAttribute="height" constant="40" id="UDm-mE-0Pb"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
+                                        <state key="normal">
+                                            <imageReference key="backgroundImage" image="magnifyingglass" catalog="system" symbolScale="large"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="searchButtonTapped:" destination="wOa-xa-qT7" eventType="touchUpInside" id="IbY-zJ-QCp"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yvy-0C-uv2" userLabel="Weather Card View">
+                                <rect key="frame" x="0.0" y="142" width="414" height="612"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clear-night" translatesAutoresizingMaskIntoConstraints="NO" id="mNY-6a-tf8" userLabel="Weather Card">
+                                        <rect key="frame" x="10" y="20" width="394" height="572"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="40" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Ol-tO-qsI" userLabel="Top Stack">
+                                        <rect key="frame" x="100" y="150" width="214" height="175"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="s6E-TP-l3U">
+                                                <rect key="frame" x="46.5" y="0.0" width="121" height="93.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="32" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="93d-I7-QPf">
+                                                        <rect key="frame" x="0.0" y="0.0" width="89" height="93.5"/>
+                                                        <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="80"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="°" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CMi-c6-s7r">
+                                                        <rect key="frame" x="89" y="0.0" width="32" height="93.5"/>
+                                                        <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="80"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Açık Gece" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h2q-w8-VRG">
+                                                <rect key="frame" x="24.5" y="81.5" width="165" height="93.5"/>
+                                                <fontDescription key="fontDescription" name="JosefinSans-Light" family="Josefin Sans" pointSize="36"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" spacing="117" translatesAutoresizingMaskIntoConstraints="NO" id="hc9-MB-Git" userLabel="Middle Stack">
+                                        <rect key="frame" x="25" y="348" width="299" height="68.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="yig-kJ-kvD" userLabel="Min Temp Stack">
+                                                <rect key="frame" x="0.0" y="0.0" width="127" height="68.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V8J-FX-001">
+                                                        <rect key="frame" x="36" y="0.0" width="55" height="42"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="28" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eML-G4-OES">
+                                                                <rect key="frame" x="0.0" y="0.0" width="40.5" height="42"/>
+                                                                <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="36"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="°" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HjF-Rc-Eov">
+                                                                <rect key="frame" x="40.5" y="0.0" width="14.5" height="42"/>
+                                                                <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="36"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6xH-ha-0aI">
+                                                        <rect key="frame" x="50.5" y="50" width="26" height="18.5"/>
+                                                        <fontDescription key="fontDescription" name="JosefinSans-Light" family="Josefin Sans" pointSize="14"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="8C7-uo-lVP" userLabel="Max Temp Stack">
+                                                <rect key="frame" x="244" y="0.0" width="55" height="68.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="center" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ABw-iS-xFE">
+                                                        <rect key="frame" x="0.0" y="0.0" width="55" height="42"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="34" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BTm-sz-hQm">
+                                                                <rect key="frame" x="0.0" y="0.0" width="40.5" height="42"/>
+                                                                <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="36"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="°" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQh-ot-VKT">
+                                                                <rect key="frame" x="40.5" y="0.0" width="14.5" height="42"/>
+                                                                <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="36"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Pu-Io-mgv">
+                                                        <rect key="frame" x="0.0" y="52" width="55" height="16.5"/>
+                                                        <fontDescription key="fontDescription" name="JosefinSans-Light" family="Josefin Sans" pointSize="14"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="99" translatesAutoresizingMaskIntoConstraints="NO" id="2zh-a5-rE9" userLabel="Bottom Stack">
+                                        <rect key="frame" x="57.5" y="473.5" width="286.5" height="68.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="XJA-5n-hqL" userLabel="Humidity Stack">
+                                                <rect key="frame" x="0.0" y="0.0" width="76.5" height="68.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="25%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bNY-x3-fd3">
+                                                        <rect key="frame" x="0.0" y="0.0" width="76.5" height="42"/>
+                                                        <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="36"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NEM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gta-zW-15P">
+                                                        <rect key="frame" x="0.0" y="52" width="76.5" height="16.5"/>
+                                                        <fontDescription key="fontDescription" name="JosefinSans-Light" family="Josefin Sans" pointSize="14"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="igM-7V-fE3" userLabel="Feels Like Stack">
+                                                <rect key="frame" x="175.5" y="0.0" width="111" height="68.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="fwM-Dq-vPF">
+                                                        <rect key="frame" x="0.0" y="0.0" width="111" height="42"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="28" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ySF-mc-vtt">
+                                                                <rect key="frame" x="0.0" y="0.0" width="55.5" height="42"/>
+                                                                <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="36"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="°" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="duS-NQ-hE1">
+                                                                <rect key="frame" x="55.5" y="0.0" width="55.5" height="42"/>
+                                                                <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="36"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HİSSEDİLEN SIC." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ik3-3E-zyL">
+                                                        <rect key="frame" x="0.0" y="52" width="111" height="16.5"/>
+                                                        <fontDescription key="fontDescription" name="JosefinSans-Light" family="Josefin Sans" pointSize="14"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="tintColor" red="0.26071699370000001" green="0.63439357360000004" blue="0.96611279250000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="2zh-a5-rE9" firstAttribute="leading" relation="lessThanOrEqual" secondItem="Yvy-0C-uv2" secondAttribute="leading" constant="70" id="2l1-HT-G0i"/>
+                                    <constraint firstAttribute="trailing" secondItem="2zh-a5-rE9" secondAttribute="trailing" constant="70" id="5rD-My-daf"/>
+                                    <constraint firstItem="2zh-a5-rE9" firstAttribute="top" secondItem="hc9-MB-Git" secondAttribute="bottom" constant="57" id="DTQ-Ey-fLi"/>
+                                    <constraint firstItem="hc9-MB-Git" firstAttribute="top" secondItem="5Ol-tO-qsI" secondAttribute="bottom" constant="23" id="DaJ-b4-fQf"/>
+                                    <constraint firstItem="mNY-6a-tf8" firstAttribute="centerY" secondItem="Yvy-0C-uv2" secondAttribute="centerY" id="E6Y-ry-dLl"/>
+                                    <constraint firstAttribute="trailing" secondItem="5Ol-tO-qsI" secondAttribute="trailing" constant="100" id="NIx-9K-xgN"/>
+                                    <constraint firstAttribute="bottom" secondItem="2zh-a5-rE9" secondAttribute="bottom" constant="70" id="Nk4-BX-mUj"/>
+                                    <constraint firstItem="mNY-6a-tf8" firstAttribute="top" secondItem="Yvy-0C-uv2" secondAttribute="top" constant="20" id="W6S-ix-WqN"/>
+                                    <constraint firstItem="mNY-6a-tf8" firstAttribute="leading" secondItem="Yvy-0C-uv2" secondAttribute="leading" constant="10" id="ecM-rG-ovz"/>
+                                    <constraint firstItem="5Ol-tO-qsI" firstAttribute="top" relation="lessThanOrEqual" secondItem="mNY-6a-tf8" secondAttribute="top" constant="150" id="hYA-Ir-Wdg"/>
+                                    <constraint firstItem="5Ol-tO-qsI" firstAttribute="leading" secondItem="Yvy-0C-uv2" secondAttribute="leading" constant="100" id="ly5-L5-ESq"/>
+                                    <constraint firstAttribute="trailing" secondItem="hc9-MB-Git" secondAttribute="trailing" constant="90" id="oEn-GO-B1W"/>
+                                    <constraint firstAttribute="trailing" secondItem="mNY-6a-tf8" secondAttribute="trailing" constant="10" id="rzO-mh-WZx"/>
+                                    <constraint firstItem="hc9-MB-Git" firstAttribute="leading" secondItem="Yvy-0C-uv2" secondAttribute="leading" constant="25" id="x3s-rL-fd8"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DrD-ds-ARh"/>
+                        <color key="backgroundColor" name="PrimaryColor"/>
+                        <constraints>
+                            <constraint firstItem="DrD-ds-ARh" firstAttribute="trailing" secondItem="ON1-gC-C74" secondAttribute="trailing" constant="10" id="LDr-y9-Tmj"/>
+                            <constraint firstItem="Yvy-0C-uv2" firstAttribute="centerY" secondItem="L2g-KY-lxL" secondAttribute="centerY" id="NtC-WA-f3E"/>
+                            <constraint firstAttribute="trailing" secondItem="Yvy-0C-uv2" secondAttribute="trailing" id="XO4-ga-Lex"/>
+                            <constraint firstItem="Yvy-0C-uv2" firstAttribute="top" secondItem="ON1-gC-C74" secondAttribute="bottom" constant="48" id="aJ6-Hg-9Cp"/>
+                            <constraint firstItem="ON1-gC-C74" firstAttribute="top" secondItem="DrD-ds-ARh" secondAttribute="top" constant="10" id="g71-Zc-LR8"/>
+                            <constraint firstItem="Yvy-0C-uv2" firstAttribute="leading" secondItem="L2g-KY-lxL" secondAttribute="leading" id="iVA-Ir-WzQ"/>
+                            <constraint firstItem="ON1-gC-C74" firstAttribute="leading" secondItem="DrD-ds-ARh" secondAttribute="leading" constant="10" id="qVL-w1-Qdw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="feelsLikeLabel" destination="ySF-mc-vtt" id="nF4-Fs-S3l"/>
+                        <outlet property="humidityLabel" destination="bNY-x3-fd3" id="3Wu-3n-Ouv"/>
+                        <outlet property="maxTempLabel" destination="BTm-sz-hQm" id="1md-ph-DrU"/>
+                        <outlet property="minTempLabel" destination="eML-G4-OES" id="P5l-8f-aKY"/>
+                        <outlet property="searchTextField" destination="GVJ-Nb-7yB" id="MhG-gn-CaK"/>
+                        <outlet property="tempLabel" destination="93d-I7-QPf" id="iqJ-Ku-g9C"/>
+                        <outlet property="weatherCard" destination="mNY-6a-tf8" id="ohl-uV-xj1"/>
+                        <outlet property="weatherDescription" destination="h2q-w8-VRG" id="Jrf-vw-14N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ipx-ig-Pfz" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="255"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="clear-night" width="320" height="430"/>
+        <image name="location.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <namedColor name="PrimaryColor">
+            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
