@@ -1,6 +1,8 @@
 # Weather-Swift
 Weather / Swift
 
+ Weather App Clone.
+ 
 Get your personal API key for openweathermap 
 OPENWEATHERMAP_APP_ID = YOUR_KEY
 
