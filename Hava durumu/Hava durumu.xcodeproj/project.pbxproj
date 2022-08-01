@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		222D8A25285E3BF8001C47D2 /* weather-app.png in Resources */ = {isa = PBXBuildFile; fileRef = 222D8A24285E3BF8001C47D2 /* weather-app.png */; };
-		222D8A27285E3C03001C47D2 /* weather-app.png in Resources */ = {isa = PBXBuildFile; fileRef = 222D8A26285E3C03001C47D2 /* weather-app.png */; };
 		2287FC8228204F6400CBB0F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2287FC8128204F6400CBB0F7 /* AppDelegate.swift */; };
 		2287FC8428204F6400CBB0F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2287FC8328204F6400CBB0F7 /* SceneDelegate.swift */; };
 		2287FC8628204F6400CBB0F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2287FC8528204F6400CBB0F7 /* ViewController.swift */; };
@@ -23,7 +22,6 @@
 
 /* Begin PBXFileReference section */
 		222D8A24285E3BF8001C47D2 /* weather-app.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "weather-app.png"; path = "../../../weather-app.png"; sourceTree = "<group>"; };
-		222D8A26285E3C03001C47D2 /* weather-app.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "weather-app.png"; path = "../../weather-app.png"; sourceTree = "<group>"; };
 		2287FC7E28204F6400CBB0F7 /* Hava durumu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hava durumu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2287FC8128204F6400CBB0F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2287FC8328204F6400CBB0F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,7 +71,6 @@
 				2287FC99282051E700CBB0F7 /* Model */,
 				2287FC8C28204F6600CBB0F7 /* LaunchScreen.storyboard */,
 				2287FC8F28204F6600CBB0F7 /* Info.plist */,
-				222D8A26285E3C03001C47D2 /* weather-app.png */,
 				2287FC8728204F6400CBB0F7 /* Main.storyboard */,
 				2287FC8528204F6400CBB0F7 /* ViewController.swift */,
 				2287FCA3282052BC00CBB0F7 /* Supporting Files */,
@@ -162,7 +159,6 @@
 				222D8A25285E3BF8001C47D2 /* weather-app.png in Resources */,
 				2287FC8E28204F6600CBB0F7 /* LaunchScreen.storyboard in Resources */,
 				2287FC8B28204F6600CBB0F7 /* Assets.xcassets in Resources */,
-				222D8A27285E3C03001C47D2 /* weather-app.png in Resources */,
 				2287FC8928204F6400CBB0F7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
